@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+     "use strict"
+
+    // momsBeregner(100);
+    // momsBeregner(200);
+    // momsBeregner(300);
+
+    // moms bliver ændret til 20% her
+    momsBeregner(100, 20);
+    momsBeregner(200, 20);
+    momsBeregner(300, 20);
+
+
+    function momsBeregner(amount, moms = 25) {
+        const totalAmount = amount*(1+moms/100)
+        console.log(totalAmount);
+    }
+
+    </script>
+
+</body>
+
+</html>
